@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h_top {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 22px 0 24px 0;
+}
+
+.h_top_pkpop_logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+.h_top_pkpop_logo_wrapper span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.h_top_phones {
+  display: flex;
+  align-items: center;
+}
+.h_top_phones span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 5px;
+}
+
+.h_bottom {
+  border-top: 2px solid #07B6E5;
+  border-bottom: 2px solid #07B6E5;
+  padding: 32px 0;
+}
+.h_bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.h_bottom ul li {
+  margin: 0 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn_kpop {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+.btn_kpop a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn_kpop a:before,
+.btn_kpop a:after {
+  position: absolute;
+  content: "Відправити";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #07B6E5;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.btn_kpop a:before {
+  color: #fff;
+  background: #07B6E5;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.btn_kpop a:after {
+  color: #07B6E5;
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.btn_kpop a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.pkpop_heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 50px;
+}
+
+.entry-header {
+  position: relative;
+}
+.entry-header h1 {
+  transform-style: preserve-3d;
+}
+.entry-header h1::before {
+  content: "";
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-color: #07B6E5;
+  position: absolute;
+  transform: translateZ(-1px) translateX(-10px) translateY(-20px);
+}
+
+.pkpop_cat_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+.pkpop_cat_wrapper .container {
+  width: 50%;
+}
+.pkpop_cat_wrapper .container .pkpop_cat_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  margin: 0 5px 10px;
+  font-size: 26px;
+}
+.pkpop_cat_wrapper .container .pkpop_cat_item .pkpop_item_header {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.pkpop_cat_wrapper .container .pkpop_cat_item a {
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.pkpop_cat_wrapper .container .full {
+  height: 420px;
+}
+.pkpop_cat_wrapper .container .half {
+  height: 303px;
+}
+.pkpop_cat_wrapper .container .pkpop_cat_item:first-child {
+  background-image: url("img/test2.webp");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .f_top {
+  display: flex;
+  justify-content: center;
+  margin: 21px 0;
+  max-width: 1200px;
+}
+footer .f_top div:first-child {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+footer .f_top div:first-child img {
+  width: 82px;
+  height: 82px;
+  margin-right: 20px;
+}
+footer .f_top div {
+  display: flex;
+  flex-direction: column;
+}
+footer .f_top .f_wrapper {
+  margin: 0 0 0 50px;
+}
+footer .f_bottom {
+  background-color: #07B6E5;
+  padding: 15px 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
