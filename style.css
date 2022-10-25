@@ -129,10 +129,10 @@
   width: 70%;
   margin: auto;
 }
-.pkpop_cat_wrapper .container {
+.pkpop_cat_wrapper .pk_container {
   width: 50%;
 }
-.pkpop_cat_wrapper .container .pkpop_cat_item {
+.pkpop_cat_wrapper .pk_container .pkpop_cat_item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,25 +140,72 @@
   margin: 0 5px 10px;
   font-size: 26px;
 }
-.pkpop_cat_wrapper .container .pkpop_cat_item .pkpop_item_header {
+.pkpop_cat_wrapper .pk_container .pkpop_cat_item .pkpop_item_header {
   padding-top: 5%;
   padding-left: 5%;
 }
-.pkpop_cat_wrapper .container .pkpop_cat_item a {
+.pkpop_cat_wrapper .pk_container .pkpop_cat_item a {
   padding-bottom: 5%;
   padding-left: 5%;
 }
-.pkpop_cat_wrapper .container .full {
+.pkpop_cat_wrapper .pk_container .full {
   height: 420px;
 }
-.pkpop_cat_wrapper .container .half {
+.pkpop_cat_wrapper .pk_container .half {
   height: 303px;
 }
-.pkpop_cat_wrapper .container .pkpop_cat_item:first-child {
-  background-image: url("img/test2.webp");
+.pkpop_cat_wrapper .pk_container .pkpop_cat_item:first-child {
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: contain;
+}
+.pkpop_cat_wrapper .pk_container .hand {
+  background-image: url("img/hand2.png");
+}
+.pkpop_cat_wrapper .pk_container .bio {
+  background-image: url("img/bio.png");
+}
+.pkpop_cat_wrapper .pk_container .active {
+  background-image: url("img/active.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.pkpop_cat_wrapper .pk_container .leg {
+  background-image: url("img/leg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.pkpop_cat_wrapper .pk_container .swim {
+  background-image: url("img/swim.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.pkpop_cat_wrapper .pk_container .bed {
+  background-image: url("img/test2.webp");
+}
+
+.pkpop_steps_wrapper {
+  position: relative;
+}
+.pkpop_steps_wrapper .pkpop_steps_container {
+  max-width: 1140px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.pkpop_steps_wrapper::before {
+  content: "01";
+  position: absolute;
+  top: 40px;
+  left: -150px;
+  width: 410px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 300px;
+  line-height: 1;
+  color: #f2f2f2;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
 }
 
 footer {

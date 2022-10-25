@@ -127,7 +127,7 @@
   flex-wrap: wrap;
   width: 70%;
   margin: auto;
-  .container {
+  .pk_container {
     width: 50%;
     .pkpop_cat_item {
       display: flex;
@@ -152,13 +152,62 @@
       height: 303px;
     }
     .pkpop_cat_item:first-child {
-      background-image: url("img/test2.webp");
+      // background-image: url("img/test2.webp");
       background-repeat: no-repeat;
       background-position-x: right;
       background-size: contain;
     }
+    .hand  {
+      background-image: url("img/hand2.png");
+    }
+    .bio {
+      background-image: url("img/bio.png");
+    }
+    .active {
+      background-image: url("img/active.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .leg {
+      background-image: url("img/leg.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .swim {
+      background-image: url("img/swim.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .bed {
+      background-image: url("img/test2.webp");
+    }
   }
 
+}
+
+// 3 steps
+
+.pkpop_steps_wrapper {
+  position: relative;
+  .pkpop_steps_container {
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+.pkpop_steps_wrapper::before {
+  content: "01";
+    position: absolute;
+    top: 40px;
+    left: -150px;
+    width: 410px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 300px;
+    line-height: 1;
+    color: #f2f2f2;
+    font-weight: 700;
+    text-align: right;
+    white-space: nowrap;
 }
 
 footer{ 
