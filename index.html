@@ -101,7 +101,7 @@
       </div>
       <!-- доп блок -->
     </div>
-    
+
     <!-- ССЫЛКА НА ВЕСЬ БЛОК  -->
     <div class="pkpop_cat_wrapper">
       <div class="pk_container">
@@ -159,27 +159,52 @@
     <!-- ССЫЛКА НА ВЕСЬ БЛОК -->
 
     <section class="pkpop_steps_wrapper">
-        <div class="pkpop_steps_container" data-number="01">
-            <div class="pkpop_steps_top">
-                <h3>Декілька слів про нас</h3>
-            </div>
-            <div class="pkpop_steps_bot">
-                <p>
-                    ТОВ "Арніка Лтд" засновано у грудні 1994 року. З початку роботи і по даний час всі підрозділи товариства працюють в сфері зовнішньої реклами та поліграфії.
-                </p>
-                <p>
-                    ТОВ "Арніка Лтд" засновано у грудні 1994 року. З початку роботи і по даний час всі підрозділи товариства працюють в сфері зовнішньої реклами та поліграфії.
-                </p>
-                <p>
-                    ТОВ "Арніка Лтд" засновано у грудні 1994 року. З початку роботи і по даний час всі підрозділи товариства працюють в сфері зовнішньої реклами та поліграфії.
-                </p>
-                <p>
-                    ТОВ "Арніка Лтд" засновано у грудні 1994 року. З початку роботи і по даний час всі підрозділи товариства працюють в сфері зовнішньої реклами та поліграфії.
-                </p>
-            </div>
+      <div class="pkpop_steps_container numbers_s1">
+        <div class="pkpop_steps_top">
+          <h3>
+            Звернутися в місцевий орган праці та соціального захисту населення
+          </h3>
         </div>
+        <div class="pkpop_steps_bot">
+          <h3>Надати наступні документи:</h3>
+          <p>Заява взяття на облік;</p>
+          <p>Паспорт/свідоцтво про народження (діти);</p>
+          <p>Ідентифікаційний код;</p>
+          <p>Висновок МСЕК, медичний висновок (для дітей);</p>
+          <p>Індивідуальна програма реабілітації (ІПР/ВЛК/ЛКК);</p>
+          <p>Довідка про реєстрацію місця проживання (для дітей);</p>
+          <p>Посвідчення, яке підтверджує право особи на пільги.</p>
+        </div>
+      </div>
+      <div class="pkpop_steps_container numbers_s2">
+        <div class="pkpop_steps_top">
+          <h3>Отримати направлення на забезпечення ортопедичним взуттям</h3>
+        </div>
+        <div class="pkpop_steps_bot">
+          <p>
+            Місцевий орган праці та соціального захисту населення на підставі
+            поданих документів, видає особі з особливими потребами або його
+            представнику направлення на забезпечення ортопедичним взуттям.
+          </p>
+        </div>
+      </div>
+      <div class="pkpop_steps_container numbers_s3">
+        <div class="pkpop_steps_top">
+          <h3>Отримання ортопедичного взуття</h3>
+        </div>
+        <div class="pkpop_steps_bot">
+          <h3>Підприємству, виробнику надсилаються:</h3>
+          <p>Оригінал направлення;</p>
+          <p>
+            Копії: паспорт/свідоцтво про народження і паспорт опікуна (діти);
+          </p>
+          <p>Копії: Індивідуальна програма реабілітації ІПР / ЛКК / ВЛК;</p>
+          <p>Копії: висновок МСЕК, медичний висновок (для дітей);</p>
+          <p>Копія довідки з місця роботи (працюючим);</p>
+          <p>Письмова заява-згода у разі відправлення взуття Новою Поштою.</p>
+        </div>
+      </div>
     </section>
-
 
     <!-- ТРИ КРОКИ -->
 
@@ -187,6 +212,26 @@
       <span class="btn_kpop">
         <a href=""></a>
       </span>
+    </div>
+
+    <!-- COUNTER -->
+
+    <div class="pkpop_counter_container">
+      <div class="pkpop_counter_item">
+        <h3><span id="Projects">0</span></h3>
+          <h3>РОКІВ<br>
+            РОБОТИ</h3>
+      </div>
+      <div class="pkpop_counter_item">
+        <h3><span id="Clients">0</span>+</h3>
+          <h3>ЗАДОВОЛЕНИХ<br>
+            КЛІЕНТІВ</h3>
+      </div>
+      <div class="pkpop_counter_item">
+          <h3><span id="Partners">0</span>+</h3>
+          <h3>ЗАВЕРШЕНИХ<br>
+            ПРОЕКТІВ</h3>
+      </div>
     </div>
 
     <footer>
@@ -218,5 +263,24 @@
         <span>&copy; 2022</span>
       </div>
     </footer>
+    <script>
+      function numCounter(tagId,maxCount,speed){
+          var initialNumber = 0;
+          function counter(){
+              document.getElementById(tagId).innerHTML = initialNumber;
+              ++initialNumber;
+          }
+          var counterDelay = setInterval(counter,speed);
+          function totalTime(){
+              clearInterval(counterDelay);
+          }
+          var totalPeriod = speed * (maxCount);  
+          setTimeout(totalTime, totalPeriod);
+      }
+      
+      numCounter("Projects",14,400);
+      numCounter("Clients",1200,10);
+      numCounter("Partners",2436,10);
+      </script>
   </body>
 </html>
