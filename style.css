@@ -305,4 +305,52 @@ footer .f_bottom {
   width: 100%;
   justify-content: center;
   display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .pkpop_counter_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .pkpop_counter_container .pkpop_counter_item {
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+  }
+  .pkpop_counter_container p:first-child {
+    font-size: 32px;
+    color: #07B6E5;
+  }
+  .pkpop_counter_container p:last-child {
+    font-size: 32px;
+  }
+  .pkpop_steps_wrapper .pkpop_steps_container {
+    height: auto;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .pkpop_steps_wrapper .numbers_s1::before {
+    display: none;
+  }
+  .pkpop_steps_wrapper .numbers_s2::before {
+    display: none;
+  }
+  .pkpop_steps_wrapper .numbers_s3::before {
+    display: none;
+  }
+  .pkpop_steps_wrapper .pkpop_steps_top {
+    width: 100%;
+    font-size: 20px;
+  }
+  .pkpop_steps_wrapper .pkpop_steps_bot {
+    padding-top: 40px;
+  }
+  .pkpop_cat_wrapper {
+    width: 95%;
+  }
+  .pkpop_cat_wrapper .pk_container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
