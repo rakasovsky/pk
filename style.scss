@@ -50,6 +50,16 @@
     }
 }
 
+// SLIDER
+.pkpop_lider_wrapper {
+  position: relative;
+  a {
+    position: absolute;
+    bottom: 25%;
+    right: 50%;
+  }
+}
+
 // PKPOP BUTTON
 
 .btn_kpop{
@@ -198,15 +208,37 @@
     position: relative;
   }
   .pkpop_steps_top {
-    max-width: 350px;
+    width: 50%;
     margin-right: 64px;
     padding-top: 80px;
     font-size: 2em;
   }
   .pkpop_steps_bot {
+    width: 50%;
     padding-top: 80px;
     h3, p {
       padding-bottom: 10px;
+    }
+  }
+}
+
+// Slider ort
+.pkpop_ort_wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  div {
+    position: absolute;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    padding: 50px;
+    h3 {
+      color: #07B6E5;
+      background-color:  rgba(0, 0, 0, 0.7);
     }
   }
 }
@@ -242,6 +274,48 @@
 }
 .numbers_s3:before {
   content: "03";
+  position: absolute;
+  top: 40px;
+  left: -47%;
+  width: 410px;
+  font-family: "Arial", sans-serif;
+  font-size: 300px;
+  line-height: 1;
+  color: black;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+.numbers_s4:before {
+  content: "04";
+  position: absolute;
+  top: 40px;
+  left: -47%;
+  width: 410px;
+  font-family: "Arial", sans-serif;
+  font-size: 300px;
+  line-height: 1;
+  color: black;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+.numbers_s5:before {
+  content: "05";
+  position: absolute;
+  top: 40px;
+  left: -47%;
+  width: 410px;
+  font-family: "Arial", sans-serif;
+  font-size: 300px;
+  line-height: 1;
+  color: black;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+.numbers_s6:before {
+  content: "06";
   position: absolute;
   top: 40px;
   left: -47%;
@@ -344,6 +418,15 @@ footer{
       display: none;
     }
     .numbers_s3::before {
+      display: none;
+    }
+    .numbers_s4::before {
+      display: none;
+    }
+    .numbers_s5::before {
+      display: none;
+    }
+    .numbers_s6::before {
       display: none;
     }
     
